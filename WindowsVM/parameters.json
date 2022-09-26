@@ -1,0 +1,47 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "prefix" : {
+        "value" : "fp7"
+      },  
+      "location" : {
+        "value" : "eastus2"
+      },
+      "vnetAddressPrefix" : {
+        "value" : "192.168.0.0/16"
+      },
+      "vnetSubnetPrefix" : {
+        "value" : "192.168.0.0/24"
+      },
+      "publicIpSku" : {
+        "value" : "Basic"
+      },
+      "publicIPAllocationMethod" : {
+        "value" : "Static"
+      },
+      "privateIPAllocationMethod" : {
+        "value" : "Dynamic"
+      },
+      "vmsize" : {
+        "value" : "Standard_B2ms"
+      },
+      "vm_username" : {
+        "value" : "azureuser"
+      },
+      "vm_password" : {
+        "value" : "chinandega123?"
+      },
+      "storageAccountType" : {
+        "value" : "Premium_LRS"
+      },
+      "tags" : {
+        "value" : {
+            "ENV": "DEV"
+        }       
+      },
+      "otherResourceGroup" : {
+        "value" : "network-rg"
+      }
+    }
+}
